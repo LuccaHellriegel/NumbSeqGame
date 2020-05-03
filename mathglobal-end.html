@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>MathGlobal Mainframe</title>
+		<link rel="stylesheet" href="styles.css" />
+
+		<script src="functions.js"></script>
+		<script src="Rule.js"></script>
+		<script src="pseudo-crypt.js"></script>
+		<script src="test.js"></script>
+	</head>
+	<body>
+		<div class="main-container">
+			<div style="font-size: 40pt; text-align: center;">
+				<b>
+					<u> MathGlobal Code Tester</u>
+				</b>
+				<br />
+				<br />
+			</div>
+
+			<div>
+				First Code Fragment:
+				<input id="one" />
+			</div>
+
+			<div>
+				Second Code Fragment:
+				<input id="two" />
+			</div>
+
+			<div>
+				Third Code Fragment:
+				<input id="three" />
+			</div>
+
+			<button id="send" onclick="test()">Send!</button>
+
+			<div>
+				Your Solution is:
+				<span id="status"></span>
+			</div>
+		</div>
+		<script src="words.js"></script>
+	</body>
+</html>

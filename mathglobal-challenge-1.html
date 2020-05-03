@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>MathGlobal Mainframe</title>
+		<link rel="stylesheet" href="styles.css" />
+
+		<script src="functions.js"></script>
+		<script src="Rule.js"></script>
+		<script src="./pseudo-crypt.js"></script>
+	</head>
+	<body>
+		<div class="main-container">
+			<div>
+				<div style="font-size: 40pt; text-align: center;">
+					<b>
+						<u> MathGlobal Challenge 1 (Easy)</u>
+					</b>
+					<br />
+					<br />
+				</div>
+				<div style="border: 5px solid #000; font-size: 40pt;">
+					<span>
+						Given sequence:
+					</span>
+					<span id="given"></span>
+				</div>
+				<br />
+				<div style="border: 5px solid #00ff00; font-size: 40pt;">
+					Which button follows the same sequence-creating rule? <br />
+					<tr>
+						<li>
+							Each time the site is reloaded, the solution changes! But the same types of rules are present.
+						</li>
+						<li>
+							After using your tries or after clicking on an answer, you need to reload to play again!
+						</li>
+						<li>
+							After solving all three challenges, be sure to check your conclusion here:
+							<a href="mathglobal-end.html">End Page</a>
+						</li>
+					</tr>
+				</div>
+				<br />
+				<div style="border: 5px solid #ff000da9; font-size: 40pt;">
+					<span>Tries left:</span>
+					<span id="tries">10</span>
+				</div>
+			</div>
+
+			<div class="button-container">
+				<button class="rule-button" id="A">A</button>
+				<button class="rule-button" id="B">B</button>
+				<button class="rule-button" id="C">C</button>
+			</div>
+			<div class="button-container">
+				<span class="rule-button" style="border: 5px solid #ff000da9; font-size: 30pt;">
+					<span>
+						Sequence A:
+					</span>
+					<br />
+
+					<span id="AOut"> </span>
+				</span>
+
+				<span class="rule-button" style="border: 5px solid #ff000da9; font-size: 30pt;">
+					<span>
+						Sequence B:
+					</span>
+					<br />
+
+					<span id="BOut"></span>
+				</span>
+
+				<span class="rule-button" style="border: 5px solid #ff000da9; font-size: 30pt;">
+					<span>
+						Sequence C:
+					</span>
+					<br />
+					<span id="COut"></span>
+				</span>
+			</div>
+
+			<div style="border: 5px solid #00ff00; font-size: 40pt;">Choose wisely!</div>
+
+			<div class="button-container">
+				<button class="rule-button" id="AChoice">Answer: A</button>
+				<button class="rule-button" id="BChoice">Answer: B</button>
+				<button class="rule-button" id="CChoice">Answer: C</button>
+			</div>
+
+			<div style="border: 5px solid #000; font-size: 40pt;">
+				<span>
+					Detected Code Fragment:
+				</span>
+				<span id="code-fragment"> </span>
+			</div>
+		</div>
+
+		<script src="init.js"></script>
+
+		<script src="rule-functions.js"></script>
+
+		<script src="mathglobal-challenge-1.js"></script>
+	</body>
+</html>
